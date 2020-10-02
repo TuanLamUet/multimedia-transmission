@@ -30,10 +30,8 @@ class BinaryTree:
         for c in sbin:
             if(c == '1'):
                 self.current = self.current.right
-                #print("right")
             else:
                 self.current = self.current.left
-                #print("left")
             if(self.current.data != None):
                 message+=self.current.data
                 self.current = self.root
